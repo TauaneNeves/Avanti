@@ -1,0 +1,34 @@
+.calculator {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 84, 99, 0.2);
+  width: 320px; 
+  background-color: #02292e;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px; 
+  padding: 8px;
+}
+
+
+.button.equals {
+  grid-row: span 2; 
+  height: auto;
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+}
+
+.button.zero {
+  grid-column: span 2; 
+}
+
+.button.clear {
+  grid-column: span 2;
+}
