@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Calculadora React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma calculadora desenvolvida com React, inspirada na interface e funcionalidade das calculadoras tradicionais, como a do Windows. Ela suporta operações aritméticas básicas e algumas operações unárias, proporcionando uma experiência de usuário intuitiva.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+A calculadora oferece as seguintes funcionalidades:
 
-### `npm start`
+- **Operações Básicas:** Adição, subtração, multiplicação, divisão e porcentagem.
+- **Operações Unárias:** Inversão de sinal (+/-), cálculo de recíproco (1/x), quadrado (x²) e raiz quadrada (√x).
+- **Controle de Entrada:**
+  - **CE:** Limpa a entrada atual, mantendo o histórico da operação anterior.
+  - **C:** Limpa completamente o display e o histórico, resetando a calculadora.
+  - **⌫ (Backspace):** Apaga o último dígito inserido no display principal.
+- **Display de Histórico:** Mostra a operação em andamento no display superior para facilitar o acompanhamento.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Estrutura do Projeto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O projeto segue a estrutura padrão de um aplicativo Create React App, com os componentes principais da calculadora localizados em `src/components`:
 
-### `npm test`
+- `src/App.js`: Componente principal que renderiza a calculadora.
+- `src/components/calculadora.js`: Lógica principal da calculadora, gerenciando o estado e as operações.
+- `src/components/botao.js`: Componente reutilizável para os botões da calculadora.
+- `src/components/display.js`: Componente para exibir os valores principal e de histórico.
+- Arquivos CSS: `src/index.css`, `src/App.css`, `src/components/calculadora.css`, `src/components/botao.css`, `src/components/display.css` para estilização dos componentes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Como Iniciar o Projeto
 
-### `npm run build`
+Para executar este projeto localmente, siga os passos abaixo:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Clone o repositório:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone [URL_DO_SEU_REPOSITORIO]
+cd calculadora
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+(Substitua `[URL_DO_SEU_REPOSITORIO]` pelo URL do seu repositório Git.)
 
-### `npm run eject`
+### Instale as dependências:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+# ou
+yarn install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Execute o aplicativo em modo de desenvolvimento:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+# ou
+yarn start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Isso iniciará o aplicativo em `http://localhost:3000`. A página será recarregada automaticamente se você fizer edições. Você também verá quaisquer erros de lint no console.
 
-## Learn More
+## Scripts Disponíveis
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+No diretório do projeto, você pode executar:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `npm start` ou `yarn start`: Roda o aplicativo no modo de desenvolvimento. Abra `http://localhost:3000` para visualizá-lo no navegador.
+- `npm test` ou `yarn test`: Inicia o executor de testes no modo interativo de observação.
+- `npm run build` ou `yarn build`: Cria o aplicativo para produção na pasta `build`, otimizando o React para o melhor desempenho.
 
-### Code Splitting
+## Saiba Mais
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Você pode aprender mais na [documentação do Create React App](https://create-react-app.dev/).  
+Para aprender React, confira a [documentação do React](https://reactjs.org/).
 
-### Analyzing the Bundle Size
+## Dependências Principais
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+As principais dependências do projeto, conforme `package.json`, são:
 
-### Making a Progressive Web App
+- `react`
+- `react-dom`
+- `react-scripts`
+- `@testing-library/jest-dom`
+- `@testing-library/react`
+- `@testing-library/user-event`
+- `web-vitals`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desenvolvido por **Tauane Romi Neves**.
