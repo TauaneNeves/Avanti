@@ -1,0 +1,105 @@
+/* tauaneneves/avanti/Avanti-main/teste/src/components/calculadora.css */
+.calculator {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 84, 99, 0.2);
+  width: 320px; 
+  background-color: #02292e;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px; 
+  padding: 8px;
+}
+
+
+/* Adjustments for the specific layout shown in the image */
+.button.equals {
+  grid-row: span 2; 
+  height: auto;
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+}
+
+.button.zero {
+  grid-column: span 2; 
+}
+
+/* New class for the top row/miscellaneous operators */
+.button.misc-operator {
+  background-color: #4a4a4a; /* Darker grey as seen in the image */
+  color: #fff;
+  font-size: 1.5em; /* Slightly smaller font for these buttons */
+}
+
+.button.misc-operator:hover {
+  background-color: #6a6a6a;
+}
+
+.button.misc-operator:active {
+  background-color: #5a5a5a;
+}
+
+/* Existing styles for other buttons */
+.button {
+  background-color: #565e5b; 
+  border: none; 
+  font-size: 1.8em; 
+  padding: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+  color: #eee; 
+  border-radius: 8px;
+  outline: none; 
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+}
+
+.button:hover {
+  background-color: #c7c6c6; 
+}
+
+.button.operator {
+  background-color: #2b5845; 
+  color: #fff;
+}
+
+.button.operator:hover {
+  background-color: #7bf570;
+}
+
+.button.operator:active {
+  background-color: #7bf570;
+}
+
+.button.clear {
+  background-color: #832424;
+  color: #fff;
+  grid-column: span 1; /* Changed from span 2, as C is now a single button */
+}
+
+.button.clear:hover {
+  background-color: #ff0800;
+}
+
+.button.clear:active {
+  background-color: #ffffff;
+}
+
+.button.equals {
+  background-color: #4285F4; /* Blue color as in the image */
+  color: #fff;
+}
+
+.button.equals:hover {
+  background-color: #3367D6;
+}
+
+.button.equals:active {
+  background-color: #3060C9;
+}
